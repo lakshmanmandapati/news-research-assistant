@@ -1,7 +1,7 @@
 
-# RockyBot: News Research Tool
+# URLyzer: News Research Tool
 
-**RockyBot** is a user-friendly news research tool built with LangChain and Streamlit. It allows you to fetch financial news content from URLs, embed them using OpenAI, store them in FAISS for efficient retrieval, and query insights via LLMs.
+**URLyzer** is a user-friendly news research tool built with LangChain and Streamlit. It allows you to fetch financial news content from URLs, embed them using OpenAI, store them in FAISS for efficient retrieval, and query insights via LLMs.
 
 ---
 
@@ -20,15 +20,7 @@
 ```
 news_research_tool/
 │
-├── assets/
-│   └── URLyzer.png                 # Optional assets like logos or visuals
-│
 ├── faiss_index/                    # Directory storing FAISS index files
-│
-├── notebook/                       # Jupyter notebooks for prototyping (if any)
-│
-├── venv/                           # Virtual environment (excluded from version control)
-│
 ├── .env                            # Environment file storing API keys
 ├── main.py                         # Streamlit app main script
 ├── requirements.txt                # Python dependencies
@@ -97,15 +89,17 @@ https://www.moneycontrol.com/news/business/stocks/buy-tata-motors-target-of-rs-7
 See [`requirements.txt`](./requirements.txt) for full list.
 
 ```
-streamlit
 langchain
 langchain-community
-langchain-openai
-unstructured
 python-dotenv
-openai
+streamlit
+unstructured
+tiktoken
 faiss-cpu
-tqdm
+libmagic
+python-magic
+openai
+langchain-openai
 ```
 
 ---
@@ -119,7 +113,7 @@ tqdm
 
 ## UI Preview
 
-![RockyBot UI](assets/URLyzer.png)
+![URLyzer UI](assets/URLyzer.png)
 
 ---
 
